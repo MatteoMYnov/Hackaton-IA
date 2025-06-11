@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over for the Planet ?</title>
+    <link rel="stylesheet" href="../styles/gameover.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Page d'accueil -->
+    <div id="home-screen" class="home-screen">
+        <h1>Game Over for the Planet ?</h1>
+        <p class="subtitle">Jusqu'où iras-tu pour jouer sans détruire la planète ?</p>
+        <button id="start-btn">Commencer</button>
+        <div class="eco-icons">
+            <span title="Joue, choisis, agis...">🎮</span>
+            <span title="Surveille ton impact">🌍</span>
+            <span title="Deviens un éco-gamer !">⚡</span>
+        </div>
+    </div>
+
+    <!-- Dashboard de jeu (caché au début) -->
+    <div id="dashboard" class="dashboard hidden">
+        <div class="left-panel sidebar">
+            <h2>Actions</h2>
+            <button class="action-btn" data-action="play">Jouer à un jeu</button>
+            <button class="action-btn" data-action="stream">Streamer</button>
+            <button class="action-btn" data-action="buy-console">Acheter une console</button>
+            <button class="action-btn" data-action="recycle">Recycler un appareil</button>
+            <button class="action-btn" data-action="eco-game">Choisir un jeu éco-conçu</button>
+        </div>
+        <div class="main-panel center-image-panel">
+            <img id="action-image" src="" alt="Action visuelle" class="action-image hidden" />
+            <div id="action-explanation" class="action-explanation hidden"></div>
+            <div id="planet-message" class="planet-message"></div>
+        </div>
+        <div class="right-panel sidebar">
+            <h2>État de la planète</h2>
+            <div class="gauge-container">
+                <div class="gauge-label">CO₂</div>
+                <div class="gauge-bar"><div id="co2-bar" class="gauge-fill"></div></div>
+            </div>
+            <div class="gauge-container">
+                <div class="gauge-label">Énergie</div>
+                <div class="gauge-bar"><div id="energy-bar" class="gauge-fill"></div></div>
+            </div>
+            <div class="gauge-container">
+                <div class="gauge-label">Déchets</div>
+                <div class="gauge-bar"><div id="waste-bar" class="gauge-fill"></div></div>
+            </div>
+            <h2>Infos & Conseils</h2> 
+            <div id="tips-box" class="tips-box"></div>
+        </div>
+    </div>
+
+    <div id="gameover-modal" class="gameover-modal hidden">
+        <div class="gameover-backdrop"></div>
+        <div class="gameover-content">
+            <h2>🌍 GAME OVER</h2>
+            <div id="gameover-summary"></div>
+            <a id="accueil-btn" href="index.html">Accueil</a>
+            <button id="replay-btn">Rejouer</button>
+        </div>
+    </div>
+
+    <script src="../js/gameover.js"></script>
+</body>
+</html> 

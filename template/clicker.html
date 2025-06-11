@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>XP Clicker 🎮</title>
+  <link rel="stylesheet" href="../styles/clicker.css">
+</head>
+<body>
+  <h1>XP Clicker 🎮</h1>
+
+  <img src="../img/console.png" id="earth" alt="Console de jeu">
+
+  <div id="stats">
+    🧬 XP : <span id="energy">0</span><br>
+    🖥️ Setups Gaming : <span id="factories">0</span><br>
+    🕹️ Bornes Arcade : <span id="nuclear">0</span><br>
+    🧑‍💻 Studios Indé : <span id="dumps">0</span><br>
+    🌐 Connexions Fibre : <span id="highways">0</span><br>
+    🛒 Boutiques eSports : <span id="airports">0</span><br>
+    💾 Data Centers : <span id="coal">0</span>
+  </div>
+
+  <div id="goal">
+    🎯 Objectif : 10 000 XP<br>
+    Progression : <progress id="progressBar" value="0" max="10000"></progress>
+  </div>
+
+  <div id="timer">
+    ⏱️ Temps écoulé : <span id="time">0</span>s
+  </div>
+
+  <div id="shop">
+    <button id="buyFactory">🖥️ Setup Gaming (10 XP)</button>
+    <button id="buyNuclear">🕹️ Borne Arcade (100 XP)</button>
+    <button id="buyDump">🧑‍💻 Studio Indé (500 XP)</button>
+    <button id="buyHighway">🌐 Connexion Fibre (1000 XP)</button>
+    <button id="buyAirport">🛒 Boutique eSports (2500 XP)</button>
+    <button id="buyCoal">💾 Data Center (5000 XP)</button>
+  </div>
+
+  <div id="win-message"></div>
+
+  <script src="../js/clicker.js"></script>
+</body>
+</html>
