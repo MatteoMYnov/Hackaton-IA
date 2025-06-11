@@ -1,0 +1,86 @@
+:root {
+  --bg-dark: #0d0d0d;
+  --bg-light: #1a1a1a;
+  --neon: #00ffcc;
+  --neon-soft: #00ffcc33;
+  --text-light: #88ffee;
+  --text-muted: #ccc;
+  --danger: #ff0000;
+  --warning: #ff8800;
+  --zone-glow: 0 0 15px 5px var(--neon);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: var(--neon);
+  text-shadow: 0 0 10px var(--neon);
+}
+
+header p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  color: var(--text-muted);
+  margin-top: 1rem;
+}
+
+.games-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.game-card {
+  background-color: var(--bg-light);
+  border: 2px solid var(--neon-soft);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 400px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-light);
+  box-shadow: var(--zone-glow);
+  transition: transform 0.2s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px var(--neon);
+  border-color: var(--neon);
+}
+
+.game-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--neon);
+  text-shadow: 0 0 5px var(--neon);
+}
+
+.game-card p {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
